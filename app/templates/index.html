@@ -1,0 +1,18 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Bitcoin Fees{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-fixed-top">
+  <!-- ... -->
+</div>
+{% endblock %}
+
+{% block content %}
+  <h1>Bitcoin Fees</h1>
+
+  <ul>
+    <li>最速送金: {{ fee_info.fastest_fee }} satoshis</li>
+    <li>30分で承認: {{ fee_info.half_hour_fee }} satoshis</li>
+    <li>1時間で承認: {{ fee_info.hour_fee }} satoshis</li>
+  </ul>
+{% endblock %}
